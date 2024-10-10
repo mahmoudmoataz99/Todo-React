@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Task from './task';
 import Input from './input';
-import Modal from './modal';
+import Modal from './Modal';
 
 const DataFetcher = () => {
     const [data, setData] = useState([]);
