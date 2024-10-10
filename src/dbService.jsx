@@ -62,6 +62,7 @@ const DataFetcher = () => {
     return (
         <>
             <Input addNewTask={addTask} />
+            <article className='mx-auto w-3/4'>
             {data.length === 0 ? (
                 <h1 className='text-6xl text-red-400 font-extrabold'>No tasks are added,<br /> please add new tasks</h1>
             ) : (
@@ -70,6 +71,7 @@ const DataFetcher = () => {
                         deleteTask={() => deleteTask(index)} openModal={() => modalOpenFunc(index)} />
                 ))
             )}
+            </article>
             {openModal && <Modal closeModal={()=>closeModal} editTask={editTask} taskToEdit={data[taskIndex]} />}
         </>
     );

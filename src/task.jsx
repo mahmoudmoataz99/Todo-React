@@ -2,9 +2,9 @@ import React from 'react';
 
 function Task(props) {
     return (
-        <section className='my-3 mx-40 bg-slate-300 flex justify-between gap-4 text-start border-2 rounded-lg p-4 px-8 border-sky-600 text-black'>
+        <section className='my-3 bg-slate-300 flex justify-between md:flex-row flex-col gap-4 text-start border-2 rounded-lg p-4 px-8 border-sky-600 text-black'>
             <div>
-                <h3 className='text-xl font-semibold'>{props.details}</h3>
+                <h3 className='text-xl font-semibold overflow-hidden'>{props.details}</h3>
                 <p className='text-gray-500 text-sm'>{props.time}</p>
             </div>
             <div className='flex gap-4 py-2'>
